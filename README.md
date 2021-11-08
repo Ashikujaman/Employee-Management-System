@@ -51,6 +51,24 @@ class login  implements ActionListener{
         b1.setForeground(Color.WHITE);
         f.add(b1);
         
-        }
+         b2=new JButton("Cancel");
+        b2.setBounds(180,140,120,30);
+        b2.setFont(new Font("serif",Font.BOLD,15));
+        b2.setBackground(Color.BLACK);
+        b2.setForeground(Color.WHITE);
+        f.add(b2);
 
+        b2.addActionListener(this);
+        
+        f.getContentPane().setBackground(Color.WHITE);
+
+        f.setVisible(true);
+        f.setSize(600,300);
+        f.setLocation(400,300);
+        
+        }
+        
+        public static void main(String[] arg){
+        login l=new login();
+    }
 }
